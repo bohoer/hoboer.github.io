@@ -22,7 +22,10 @@
 <meta name="keywords" content="" />
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ..." />
+<meta name="description" content="傻妞安装
+1，安装过傻妞先发命令给机器人delete silly compiled_at
+set sillyGirl download_prefix https://ghproxy.com/
+2..." />
 
 
 <meta name="robots" content="all" />
@@ -33,7 +36,7 @@
 
 <title>
     
-    Hello World |
+    傻妞对接微信 |
     
     Hexo
 </title>
@@ -142,9 +145,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Hello World">
+        <h1 id="傻妞对接微信">
             
-            Hello World
+            傻妞对接微信
             
         </h1>
         <div class="post-meta">
@@ -177,19 +180,39 @@
     </div>
     
     <div class="post-body post-content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>傻妞安装</p>
+<p>1，安装过傻妞先发命令给机器人<br>delete silly compiled_at</p>
+<p>set sillyGirl download_prefix <a target="_blank" rel="noopener" href="https://ghproxy.com/">https://ghproxy.com/</a></p>
+<p>2，一键安装新版</p>
+<p>更新命令会保留旧数据</p>
+<p>s&#x3D;sillyGirl;a&#x3D;arm64;if [[ $(uname -a | grep “x86_64”) !&#x3D; “” ]];then a&#x3D;amd64;fi ;if [ ! -d $s ];then mkdir $s;fi ;cd $s;wget <a target="_blank" rel="noopener" href="https://mirror.ghproxy.com/https://github.com/cdle/$%7Bs%7D/releases/download/main/$%7Bs%7D_linux_$a">https://mirror.ghproxy.com/https://github.com/cdle/${s}/releases/download/main/${s}_linux_$a</a> -O $s &amp;&amp; chmod 777 $s;pkill -9 $s;$(pwd)&#x2F;$s </p>
+<p>3，弹出二维码机器人QQ扫码绑定机器人，登录后，按住ctrl+c退出</p>
+<p>4，静默挂机 执行下面代码<br>nohup .&#x2F;sillyGirl 1&gt;&#x2F;dev&#x2F;null 2&gt;&amp;1 &amp; #AMD64</p>
+<p>5，QQ机器人默认管理员功能从sillyGirl中移除，初始配置请到&#x2F;etc&#x2F;sillyGirl&#x2F;sets.conf配置如下内容。（没有就新建）<br>#设置qq管理员<br>set qq masters 管理QQ号码</p>
+<p>或者SSH执行此命令<br>s&#x3D;&#x2F;etc&#x2F;sillyGirl;if [ ! -d $s ];then mkdir $s; fi; echo “set qq masters 你的管理QQ号” &gt; &#x2F;etc&#x2F;sillyGirl&#x2F;sets.conf</p>
+<p>6，禁用机器人自己回复信息<br>set qq onself true</p>
+<p>重启一下就可以了</p>
+<p>7，开启芝士（发送命令给机器人）<br>set jd_cookie enable_jd_cookie true</p>
+<p>set jd_cookie nolan_addr <a target="_blank" rel="noopener" href="http://110.42.205.74:10086/">http://110.42.205.74:10086</a></p>
+<p>设置qq管理员 可以多个，用&amp;连接，请注意空格<br>set qq masters 491657147</p>
+<p>指定要监听的qq群<br>set qq onGroups 470779590</p>
+<p>设置青龙open api id<br>set qinglong client_id 青龙应用ID</p>
+<p>设置青龙open api 密码<br>set qinglong client_secret 青龙应用secret(密钥)</p>
+<p>设置青龙登录地址<br>set qinglong host <a target="_blank" rel="noopener" href="http://114.132.230.105:9528/">http://114.132.230.105:9528</a></p>
+<p>青龙是否开启自动隐藏重复任务功能<br>set qinglong autoCronHideDuplicate false</p>
+<p>设置是否自动同意好友请求<br>set qq auto_friend true</p>
+<p>傻妞自动升级是否通知<br>set sillyGirl update_notify true</p>
+<p>是否开启傻妞自动更新<br>set sillyGirl auto_update true</p>
+<p>傻妞http服务端口<br>set sillyGirl port 8080</p>
+<p>傻妞消息撤回等待时间，单位秒<br>set sillyGirl duration 300</p>
+<p>设置内置小爱API</p>
+<p>set sillyGirl 小爱同学 <a target="_blank" rel="noopener" href="http://jiuli.xiaoapi.cn/i/xiaoai_tts.php?msg=%25s">http://jiuli.xiaoapi.cn/i/xiaoai_tts.php?msg=%s</a></p>
+<p>小爱API返回词典中获取那个键的值</p>
+<p>set sillyGirl 小爱同学gjson text</p>
+<p>关键词撤回功能</p>
+<p>set sillyGirl recall 关键词1&amp;关键词2…</p>
+<p>关键词回复功能</p>
+<p>set reply 关键词[支持正则] 回复内容</p>
 
     </div>
     
@@ -241,7 +264,7 @@
             文章目录
         </h3>
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <p>暂无目录</p>
         
     </div>
 </aside>
