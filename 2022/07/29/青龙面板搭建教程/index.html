@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="2.3.0">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://example.com">
+    <!--SEO-->
+
+<meta name="keywords" content="" />
+
+
+<meta name="description" content="服务器租用推荐腾讯云、阿里云
+1.系统选择： centos7.6
+以腾讯云为例，先选地区、然后选择官方镜像、系统镜像、Centos7.6版本
+密码请自行设置。
+2. SSH远程服务器管理工具：F..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    青龙面板搭建教程 |
+    
+    Hexo
+</title>
+
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='John Doe'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <h2>
+                少而不学，老而无识
+            </h2>
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://example.com">
+                        Hexo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DVG5UcHZxdXhpaktp"><i class="fa "></i>
+                                教程</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="青龙面板搭建教程">
+            
+            青龙面板搭建教程
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2022/07/29</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <p><strong>服务器租用推荐腾讯云、阿里云</strong></p>
+<p><strong>1.系统选择： centos7.6</strong></p>
+<p>以腾讯云为例，先选地区、然后选择官方镜像、系统镜像、Centos7.6版本</p>
+<p>密码请自行设置。</p>
+<p><strong>2. SSH远程服务器管理工具：FinalShell<br> 软件地址：</strong><a target="_blank" rel="noopener" href="https://www.123pan.com/s/0UyrVv-9P8I">FinalShell3.9.5.7免安装版</a></p>
+<p> 打开FinalShell，如图所示，填上服务器IP，用户名root，密码。<br> <img src="https://img-blog.csdnimg.cn/a4cbb382c7754df29ff3ab0ce0fadb01.png#pic_center"><br> 填好之后选择服务器进行连接，连接成功如下图</p>
+<p><img src="https://img-blog.csdnimg.cn/ab132cd6ceab4f2b827a89fb1c0a6d7c.png#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>3、装宝塔</strong><br>一键安装代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p> 回复：y    等待它自己安装完成即可，成功如图：<br> <img src="https://img-blog.csdnimg.cn/3d6290ffb6774828a10926c97411abfb.png#pic_center"><br>复制上面的外网面板地址——下面的password，然后浏览器输入外网面板地址，登陆用户名和密码就是下面的username、password</p>
+<p>如果访问进不去，放行下8888端口</p>
+<p><strong>4、登录宝塔面板，安装docker</strong></p>
+<p>登陆宝塔之后，绑定宝塔账号可以自己注册个宝塔账号进行绑定</p>
+<p>会给你推荐安装的，直接×掉就行</p>
+<p>然后左侧软件商店    搜索  docker    安装</p>
+<p>等待完成，安装完成后回到ssh连接工具开始搭建青龙<br><img src="https://img-blog.csdnimg.cn/5be428e0fc8447ac87df847e23f04188.png#pic_center"><br><strong>5. 搭建青龙面板</strong></p>
+<p>单容器青龙面板搭，首先去拉镜像，最新版拉取命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull whyour/qinglong:latest</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/ea954a6947fd4ed79b35a4a04a326d28.png#pic_center"></p>
+<p>安装青龙容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">docker run -dit \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/config:/ql/config \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/log:/ql/log \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/db:/ql/db \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/repo:/ql/repo \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/raw:/ql/raw \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/scripts:/ql/scripts \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/jbot:/ql/jbot \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/deps:/ql/deps \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/ninja:/ql/ninja \</span><br><span class="line">  -p 5700:5700 \</span><br><span class="line">  -p 5701:5701 \</span><br><span class="line">  --name qinglong \</span><br><span class="line">  --hostname qinglong \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  whyour/qinglong:latest</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/0c6408b2d53447a4bf4f269fd879e633.png#pic_center"></p>
+<p><img src="https://img-blog.csdnimg.cn/dfd5e273c02a4296bb225dc309e46be1.png#pic_center"><br>出现这一行就是安装完成了</p>
+<p><strong>老版青龙安装</strong><br><strong><a target="_blank" rel="noopener" href="https://www.123pan.com/s/0UyrVv-QP8I">青龙2.10.13版本镜像</a></strong></p>
+<p>下载镜像后，打开宝塔面板 Docker管理器上传，上传完成后点导入</p>
+<p><img src="https://img-blog.csdnimg.cn/bffa12eae1db44998c7cc7647d25c0df.png#pic_center"><br>然后复制以下命令安装容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">docker run -dit \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/config:/ql/config \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/log:/ql/log \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/db:/ql/db \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/repo:/ql/repo \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/raw:/ql/raw \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/scripts:/ql/scripts \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/jbot:/ql/jbot \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/deps:/ql/deps \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/ninja:/ql/ninja \</span><br><span class="line">  -p 12010:5700 \</span><br><span class="line">  -p 5701:5701 \</span><br><span class="line">  --name qinglong \</span><br><span class="line">  --hostname qinglong \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  whyour/qinglong:2.10.13</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>其中2.10.13是青龙版本号，要拉取其他版本命令如下</p>
+<p>青龙2.10.2镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull byniht/qinglong:2.10.2</span><br></pre></td></tr></table></figure>
+<p>安装容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">docker run -dit \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/config:/ql/config \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/log:/ql/log \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/db:/ql/db \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/repo:/ql/repo \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/raw:/ql/raw \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/scripts:/ql/scripts \</span><br><span class="line">   -v <span class="variable">$PWD</span>/ql/jbot:/ql/jbot \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/deps:/ql/deps \</span><br><span class="line">  -v <span class="variable">$PWD</span>/ql/ninja:/ql/ninja \</span><br><span class="line">   -p 12010:5700 \</span><br><span class="line">   -p 5701:5701 \</span><br><span class="line">   --name qinglong \</span><br><span class="line">   --hostname qinglong \</span><br><span class="line">   --restart unless-stopped \</span><br><span class="line">   byniht/qinglong:2.10.2</span><br></pre></td></tr></table></figure>
+<p><strong>青龙注册与登录</strong><br>创建完成后，去浏览器输入你的青龙所在服务器的IP:和你设置的端口，例如本教程青龙端口是12010，那就访问青龙的 ip:12010.（推荐谷歌浏览器）<br><img src="https://img-blog.csdnimg.cn/f1108747a3ea4bb68149841d998c4c7a.png#pic_center"><br><img src="https://img-blog.csdnimg.cn/7e27625ef4064413b389584ceabf9524.png#pic_center"><br><img src="https://img-blog.csdnimg.cn/ece259c5df83498f83081843b6e037d4.png#pic_center"><br><strong>依赖安装</strong></p>
+<p>一键安装</p>
+<p>进入青龙容器，qinglong 代表你的容器名称</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it qinglong bash</span><br></pre></td></tr></table></figure>
+<p>一键安装命令(要等许久建议喝几杯茶先)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shufflewzc/QLDependency/main/Shell/QLOneKeyDependency.sh | sh</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/fcb3fdd383bf4c5385c413385090b88e.png#pic_center"><br>完成后重启青龙容器<br>先退出</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<p>重启青龙容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart qinglong</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/1c63ccea206a4f7e9c6c4a6451cd1d5c.png#pic_center"></p>
+<p><strong>青龙内安装依赖</strong><br><img src="https://img-blog.csdnimg.cn/97f78b00ff924bedb08b192d395347b4.png#pic_center"><br>添加下面的到图中所示的 node.js 内，按照图来选择！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm&amp;upgrade pip&amp;install&amp;png-js&amp;date-fns&amp;axios&amp;crypto-js&amp;ts-md5&amp;tslib&amp;@types/node&amp;dotenv&amp;typescript@&amp;socks-proxy-agent&amp;https-proxy-agent&amp;fs&amp;require&amp;tslib&amp;jsdom&amp;request&amp;js-base64&amp;requests&amp;form-data&amp;crypto -g&amp;ws@7.4.3&amp;prettytable&amp;tough-cookie&amp;jsdom -g&amp;jieba&amp;json5&amp;global-agent&amp;pip3 install jieba&amp;npm i</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/a5786023d56a4ca9882d7356dd94c9d6.png#pic_center"><br>python3内安装以下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typescript&amp;requests&amp;canvas&amp;ping3&amp;jieba&amp;PyExecJS</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/ef4cc2830ff34a7886d3fae761faedbd.png#pic_center"><br>linux内安装以下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bizCode&amp;bizMsg&amp;lxml</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/c1060db8741f48e789e56023a549f2b4.png#pic_center"><br>等几分钟刷新查看是否成功<br><img src="https://img-blog.csdnimg.cn/6649969b45814e67a3f2f6d2b5aa07e2.png#pic_center"><br><strong>青龙部分命令</strong></p>
+<p>查看青龙密码，注意你的容器及文件夹名称</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~ &amp;&amp; <span class="built_in">cat</span> ql/config/auth.json</span><br></pre></td></tr></table></figure>
+<p>检测青龙环境并修复</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ql check</span><br></pre></td></tr></table></figure>
+<p>重置登录错误次数，如果是docker容器执行先执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it qinglong bash</span><br></pre></td></tr></table></figure>
+<p>再执行下面命令即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ql resetlet</span><br></pre></td></tr></table></figure>
+<p>青龙面板的完整安装教程就到这里了，交流群 ：<a target="_blank" rel="noopener" href="https://jq.qq.com/?_wv=1027&k=Rvh2OGC8">470779590</a></p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/2022/07/29/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E6%8B%89%E5%8F%96%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/" class="pre-post btn btn-default" title='青龙面板拉取脚本教程'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            青龙面板拉取脚本教程</span>
+    </a>
+    
+    
+</div>
+
+<div id="comments">
+    
+<p>评论系统未开启，无法评论！</p>
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <p>暂无目录</p>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2022
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>

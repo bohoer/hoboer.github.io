@@ -22,10 +22,8 @@
 <meta name="keywords" content="" />
 
 
-<meta name="description" content="傻妞安装
-1，安装过傻妞先发命令给机器人delete silly compiled_at
-set sillyGirl download_prefix https://ghproxy.com/
-2..." />
+<meta name="description" content="附上大佬的拉库命令
+1ql repo https://github.com/KingRan/KR.git &quot;jd_|jx_|jdCookie&quot; &quot;activity|..." />
 
 
 <meta name="robots" content="all" />
@@ -36,7 +34,7 @@ set sillyGirl download_prefix https://ghproxy.com/
 
 <title>
     
-    傻妞对接微信 |
+    青龙面板拉取脚本教程 |
     
     Hexo
 </title>
@@ -76,9 +74,7 @@ set sillyGirl download_prefix https://ghproxy.com/
 <div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
 <![endif]-->
 <body>
-    <header class="main-header"  style="background-image:url(
-    https://hexo-theme-snippet-1251680922.cos.ap-beijing.myqcloud.com/img/banner.jpg)"
-     >
+    <header class="main-header"  >
     <div class="main-header-box">
         <a class="header-avatar" href="/" title='John Doe'>
             <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
@@ -114,17 +110,7 @@ set sillyGirl download_prefix https://ghproxy.com/
                         
                         <li role="presentation" class="text-center">
                             <a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DVG5UcHZxdXhpaktp"><i class="fa "></i>
-                                羊毛</a>
-                        </li>
-                        
-                        <li role="presentation" class="text-center">
-                            <a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DVFpLYldGREt3TEF5"><i class="fa "></i>
-                                饿了么</a>
-                        </li>
-                        
-                        <li role="presentation" class="text-center">
-                            <a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DVFl4SHlMVmpGeVBM"><i class="fa "></i>
-                                快手</a>
+                                教程</a>
                         </li>
                         
                         <li role="presentation" class="text-center">
@@ -145,9 +131,9 @@ set sillyGirl download_prefix https://ghproxy.com/
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="傻妞对接微信">
+        <h1 id="青龙面板拉取脚本教程">
             
-            傻妞对接微信
+            青龙面板拉取脚本教程
             
         </h1>
         <div class="post-meta">
@@ -180,64 +166,19 @@ set sillyGirl download_prefix https://ghproxy.com/
     </div>
     
     <div class="post-body post-content">
-        <p>傻妞安装</p>
-<p>1，安装过傻妞先发命令给机器人<br>delete silly compiled_at</p>
-<p>set sillyGirl download_prefix <a target="_blank" rel="noopener" href="https://ghproxy.com/">https://ghproxy.com/</a></p>
-<p>2，一键安装新版</p>
-<p>更新命令会保留旧数据</p>
-<p>s&#x3D;sillyGirl;a&#x3D;arm64;if [[ $(uname -a | grep “x86_64”) !&#x3D; “” ]];then a&#x3D;amd64;fi ;if [ ! -d $s ];then mkdir $s;fi ;cd $s;wget <a target="_blank" rel="noopener" href="https://mirror.ghproxy.com/https://github.com/cdle/$%7Bs%7D/releases/download/main/$%7Bs%7D_linux_$a">https://mirror.ghproxy.com/https://github.com/cdle/${s}/releases/download/main/${s}_linux_$a</a> -O $s &amp;&amp; chmod 777 $s;pkill -9 $s;$(pwd)&#x2F;$s </p>
-<p>3，弹出二维码机器人QQ扫码绑定机器人，登录后，按住ctrl+c退出</p>
-<p>4，静默挂机 执行下面代码<br>nohup .&#x2F;sillyGirl 1&gt;&#x2F;dev&#x2F;null 2&gt;&amp;1 &amp; #AMD64</p>
-<p>5，QQ机器人默认管理员功能从sillyGirl中移除，初始配置请到&#x2F;etc&#x2F;sillyGirl&#x2F;sets.conf配置如下内容。（没有就新建）<br>#设置qq管理员<br>set qq masters 管理QQ号码</p>
-<p>或者SSH执行此命令<br>s&#x3D;&#x2F;etc&#x2F;sillyGirl;if [ ! -d $s ];then mkdir $s; fi; echo “set qq masters 你的管理QQ号” &gt; &#x2F;etc&#x2F;sillyGirl&#x2F;sets.conf</p>
-<p>6，禁用机器人自己回复信息<br>set qq onself true</p>
-<p>重启一下就可以了</p>
-<p>7，开启芝士（发送命令给机器人）<br>set jd_cookie enable_jd_cookie true</p>
-<p>set jd_cookie nolan_addr <a target="_blank" rel="noopener" href="http://110.42.205.74:10086/">http://110.42.205.74:10086</a></p>
-<p>设置qq管理员 可以多个，用&amp;连接，请注意空格<br>set qq masters 491657147</p>
-<p>指定要监听的qq群<br>set qq onGroups 470779590</p>
-<p>设置青龙open api id<br>set qinglong client_id 青龙应用ID</p>
-<p>设置青龙open api 密码<br>set qinglong client_secret 青龙应用secret(密钥)</p>
-<p>设置青龙登录地址<br>set qinglong host <a target="_blank" rel="noopener" href="http://114.132.230.105:9528/">http://114.132.230.105:9528</a></p>
-<p>青龙是否开启自动隐藏重复任务功能<br>set qinglong autoCronHideDuplicate false</p>
-<p>设置是否自动同意好友请求<br>set qq auto_friend true</p>
-<p>傻妞自动升级是否通知<br>set sillyGirl update_notify true</p>
-<p>是否开启傻妞自动更新<br>set sillyGirl auto_update true</p>
-<p>傻妞http服务端口<br>set sillyGirl port 8080</p>
-<p>傻妞消息撤回等待时间，单位秒<br>set sillyGirl duration 300</p>
-<p>设置内置小爱API</p>
-<p>set sillyGirl 小爱同学 <a target="_blank" rel="noopener" href="http://jiuli.xiaoapi.cn/i/xiaoai_tts.php?msg=%25s">http://jiuli.xiaoapi.cn/i/xiaoai_tts.php?msg=%s</a></p>
-<p>小爱API返回词典中获取那个键的值</p>
-<p>set sillyGirl 小爱同学gjson text</p>
-<p>关键词撤回功能</p>
-<p>set sillyGirl recall 关键词1&amp;关键词2…</p>
-<p>关键词回复功能</p>
-<p>set reply 关键词[支持正则] 回复内容</p>
+        <p><img src="https://img-blog.csdnimg.cn/d56f1ee3f2d94db1aeb10e1630112ebf.png#pic_center"><br>附上大佬的拉库命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ql repo https://github.com/KingRan/KR.git <span class="string">&quot;jd_|jx_|jdCookie&quot;</span> <span class="string">&quot;activity|backUp&quot;</span> <span class="string">&quot;^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR&quot;</span></span><br></pre></td></tr></table></figure>
+<p>拉取不了就把配置文件config.sh第20行改下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://pd.zwc365.com/cfworker/</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/e83117ff5b3345f1b2798f8d15c9ef6f.png#pic_center"><br>脚本拉取完成后，下面添加ck</p>
+<p><strong>设置环境变量</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/d9569f3331374612a623dd622920ceb9.png#pic_center"><br>添加的ck可在宝塔面板的 &#x2F;root&#x2F;ql&#x2F;config 查看</p>
+<p><img src="https://img-blog.csdnimg.cn/78ba921ce97246fc9051d8464f3adecc.png#pic_center"></p>
 
     </div>
     
-    <div class="reward" ontouchstart>
-    <div class="reward-wrap">赏
-        <div class="reward-box">
-            
-            
-            <span class="reward-type">
-                <img class="wechat" src="https://gitee.com/elm521/img/raw/master/2323.png"><b>微信打赏</b>
-            </span>
-            
-        </div>
-    </div>
-    <p class="reward-tip">
-        赞赏是不耍流氓的鼓励
-    </p>
-</div>
-    
     <div class="post-footer">
         <div>
-            
-            转载声明：
-            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href=https://qm.qq.com/cgi-bin/qm/qr?k=83L1N-Lw1iCsMfpYcBnb5OwhUcaNScd8&noverify=0>机器人</a>
-            
             
         </div>
         <div>
@@ -247,6 +188,12 @@ set sillyGirl download_prefix https://ghproxy.com/
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
+    
+    <a href="/2022/07/29/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="next-post btn btn-default" title='青龙面板搭建教程'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            青龙面板搭建教程</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
     
 </div>
 
